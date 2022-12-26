@@ -1,0 +1,11 @@
+package vend1;
+
+public class Hotdrink extends Product {
+    int temp;
+
+    public Hotdrink(String name, double d, int temperature, int temp) {
+        super(name, d, temperature);
+        this.temp = temp;
+    }
+
+}
