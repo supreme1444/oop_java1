@@ -1,0 +1,24 @@
+package vend1;
+
+import java.util.ArrayList;
+
+public class Main4 {
+    public static void main(String[] args) {
+        Product mydrunk = new Product("Black Tea", 0.5, 70);
+        Product mydrunk1 = new Product("Green Tea", 1.0, 70);
+        Product mydrunk2 = new Product("Red Tea", 0.5, 80);
+        Product mydrunk3 = new Product("White Tea", 0.7, 60);
+        ArrayList<Product> list = new ArrayList<>();
+        list.add(mydrunk);
+        list.add(mydrunk1);
+        list.add(mydrunk2);
+        list.add(mydrunk3);
+        Vendinghotdrink machine = new Vendinghotdrink(list);
+        machine.addProduct();
+        machine.getProducts();
+        machine.giveProduct(0);
+        System.out.println(list);
+        System.out.println(machine);
+    }
+
+}
