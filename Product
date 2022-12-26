@@ -1,0 +1,26 @@
+package vend1;
+
+public class Product
+
+{
+
+    private String name;
+    private double volume;
+    private int temperature;
+
+    public Product(String name, double d, int temperature) {
+        this.name = name;
+        this.volume = d;
+        this.temperature = temperature;
+    }
+
+    @Override
+    public String toString() {
+        return "Vendinghotdrink [name=" + name + ", volume=" + volume + ", temperature=" + temperature + "]";
+    }
+
+    public String getName() {
+        return null;
+    }
+
+}
